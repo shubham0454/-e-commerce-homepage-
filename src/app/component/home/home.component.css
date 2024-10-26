@@ -1,0 +1,284 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.header {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.header .content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    background-color: #4A4A8A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4A4A8A;
+    padding: 20px 0;
+}
+.category {
+    text-align: center;
+    color: white;
+}
+.category img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.category p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.container-2 {
+    text-align: center;
+}
+.container h1{
+    font-size: 2em;
+    color: #070707;
+    margin-bottom: 20px;
+}
+.container h2{
+    color: rgb(50, 52, 51);
+}
+.container button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner {
+    background-image: url('../Image/bg-img/pexels-ella-olsson-572949-1640774.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 200px 0;
+}
+.banner h1 {
+    font-size: 48px;
+    color: #8BC34A;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+}
+.banner button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid rgb(181, 156, 156);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF9C4;
+    padding: 20px 0;
+}
+.features .feature {
+    text-align: center;
+    width: 20%;
+}
+.features .feature i {
+    font-size: 24px;
+    color: #8BC34A;
+}
+.features .feature h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.container h1{
+   padding: 5%;
+   text-align: center;
+   color: #080808;
+}
+.categories, .rentals, .featured-products, .special-festival-foods {
+    text-align: center;
+    padding: 40px 0;
+}
+.categories h2, .rentals h2, .featured-products h2, .special-festival-foods h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.categories .category-list, .rentals .rental-list, .featured-products .product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categories .category, .rentals .rental, .featured-products .product {
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+}
+.categories .category img, .rentals .rental img, .featured-products .product img {
+    width: 100%;
+    height: auto;
+}
+.categories .category button, .rentals .rental button, .featured-products .product button {
+    padding: 10px 20px;
+    background-color: #8BC34A;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+ /* festival food */
+.FF-container{
+    background-image: url(../Image/bg-img/—Pngtree—fresh\ chinese\ wind\ dragon\ boat_1041402.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.content button {
+    background-color: #1c3d7a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.content{
+    padding:8%;
+}
+.card {
+    margin-bottom: 20px;
+  }
+
+  /* categories */
+  
+  .categorie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 100px;
+}
+.categor {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    
+}
+  .categorie .categor {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .box1 {
+    background-image: url('../Image/categories-img/images 11.jpeg');
+  }
+  
+  .box2 {
+    background-image: url('../Image/categories-img/images (17).jpeg');
+  }
+  
+  .box3 {
+    background-image: url('../Image/categories-img/images (2).jpeg');
+  }
+  
+  .box4 {
+    background-image: url('../Image/categories-img/images (4).jpeg');
+  }
+  
+  .overla {
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+    height: 200px;
+  }
+  
+  .overla h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #f9f9f9;
+  }
+  
+  .overla button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+
+  /* footer */
+  .footer {
+    background-color: #FFF9C4;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .column {
+    width: 22%;
+}
+.footer .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer .column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer .column ul li {
+    margin-bottom: 5px;
+}
+.footer .column ul li a {
+    text-decoration: none;
+    color: black;
+}
+.footer .contact {
+    text-align: center;
+}
+.footer .contact p {
+    margin: 5px 0;
+}
+.footer .social i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: black;
+}
+  
