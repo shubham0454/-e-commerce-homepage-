@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule, FormsModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -17,7 +20,6 @@ export class HeaderComponent {
   decorDropdown: false,
   rentalsDropdown: false,
 };
-toggleDropdown(dropdown: keyof typeof this.isDropdownOpen) {
-  this.isDropdownOpen[dropdown] = !this.isDropdownOpen[dropdown];
-}
+
+
 }

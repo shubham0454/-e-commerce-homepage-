@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit{
 email ="shubhamkshirsagar4045@gmail.com"
 products: any[] = [];
 
-constructor(private productService: ProductService) {}
+constructor(private productService : ProductService) {}
 
 ngOnInit(): void {
   this.products = this.productService.getProducts();

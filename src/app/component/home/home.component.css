@@ -10,7 +10,7 @@ body {
 
 }
 .header {
-    background-color: cadetblue;
+    background-color: #4A4A8A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,12 +26,6 @@ body {
     z-index: 1;
 }
 
-.header {
-    background-color: #4A4A8A;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
 .header h1 {
     margin: 0;
     font-size: 24px;
@@ -129,7 +123,7 @@ body {
 }
 .categories, .rentals, .featured-products, .special-festival-foods {
     text-align: center;
-    padding: 40px 0;
+    padding: 0 0;
 }
 .categories h2, .rentals h2, .featured-products h2, .special-festival-foods h2 {
     font-size: 24px;
@@ -155,10 +149,18 @@ body {
     color: white;
     border: 1px solid black;
     cursor: pointer;
-    margin-top: 10px;
+
 }
-
-
+/* Featured Products */
+.featured-products h2{
+    padding-top: 5%;
+}
+.featured-products .btn-1{
+ background-color: rgb(160, 157, 157) ;
+}
+.featured-products .card{
+height: 400px;
+}
 
  /* festival food */
 .FF-container{
@@ -167,6 +169,7 @@ body {
     background-position: center;
     height: 400px;
 }
+
 .content button {
     background-color: #1c3d7a;
     color: white;
@@ -226,11 +229,12 @@ body {
   
   .overla {
     padding-top: 50px;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); 
     border-radius: 8px;
     color: #ffffff;
     text-align: center;
     height: 200px;
+    opacity: 0.9;
   }
   
   .overla h2 {
@@ -248,33 +252,7 @@ body {
   /* footer */
   .footer {
     background-color: #FFF9C4;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer .column {
-    width: 22%;
-}
-.footer .column h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.footer .column ul {
-    list-style: none;
-    padding: 0;
-}
-.footer .column ul li {
-    margin-bottom: 5px;
-}
-.footer .column ul li a {
-    text-decoration: none;
-    color: black;
-}
-.footer .contact {
-    text-align: center;
-}
-.footer .contact p {
-    margin: 5px 0;
+    color: #070707;
 }
 .footer .social i {
     font-size: 24px;

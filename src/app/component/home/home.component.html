@@ -1,6 +1,6 @@
 <div class="banner">
   <h1>FRESH FOOD</h1>
-  <button routerLink="products">VIEW PRODUCTS</button>
+  <button  [routerLink]="['/products']" >VIEW PRODUCTS</button>
 </div>
 <div class="features">
   <div class="feature">
@@ -24,7 +24,7 @@
     <p>Product Return Process</p>
   </div>
 </div>
-
+<!--Categories container  -->
 <div class="container">
   <h1>Shop By Categories</h1>
   <div class="categorie">
@@ -56,75 +56,81 @@
 </div>
 
 
-
 <div class="header">
   <h1>What Do You Looking For</h1>
 </div>
+
 <div class="categories">
-  <div class="category">
-    <img
-      alt="Milk Products"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/J4Oz3SCQdYreR6A85yM99mj1UfMdevZhCOOGu09fBPoBPdpOB.jpg"
-      width="80"
-    />
-    <p>Milk Products</p>
-  </div>
-  <div class="category">
-    <img
-      alt="Sweets"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/PJsN3TJ9E1ptCxNyd5B874sdtNsVmapuvjrUrejY17m7pL1JA.jpg"
-      width="80"
-    />
-    <p>Sweets</p>
-  </div>
-  <div class="category">
-    <img
-      alt="Spices"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/HQbcdpmU9fxaLSoqeK40jvSzFwqvvry3uEnwTIpt0Ny0TXqTA.jpg"
-      width="80"
-    />
-    <p>Spices</p>
-  </div>
-  <div class="category">
-    <img
-      alt="Pickles &amp; Chutneys"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/58Ke7w5GsBxEJa06Pb5TqVnLzvPjo7hM7eRqEx1fiKGynuUnA.jpg"
-      width="80"
-    />
-    <p>Pickles &amp; Chutneys</p>
-  </div>
-  <div class="category">
-    <img
-      alt="Fasting Food"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/Lq3fMkJ6lFSOeE4IUa7IPFLFVXKJ3QvxUAr2RlsHZwsxTXqTA.jpg"
-      width="80"
-    />
-    <p>Fasting Food</p>
-  </div>
-  <div class="category">
-    <img
-      alt="Namkeens"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/1r0hjd2GjippOdTeuyOz9XlVXecfs5ME6XfOifwqnVj1e0l6E.jpg"
-      width="80"
-    />
-    <p>Namkeens</p>
-  </div>
-  <div class="category">
-    <img
-      alt="Staples"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/fCZsVDnGlZULMa5f6f3b4sjT3q53HeDfmMBtE6QRLflZ70l6E.jpg"
-      width="80"
-    />
-    <p>Staples</p>
+  <div class="row d-flex justify-content-center">
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Milk Products"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/J4Oz3SCQdYreR6A85yM99mj1UfMdevZhCOOGu09fBPoBPdpOB.jpg"
+        width="80"
+      />
+      <p>Milk Products</p>
+    </div>
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Sweets"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/PJsN3TJ9E1ptCxNyd5B874sdtNsVmapuvjrUrejY17m7pL1JA.jpg"
+        width="80"
+      />
+      <p>Sweets</p>
+    </div>
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Spices"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/HQbcdpmU9fxaLSoqeK40jvSzFwqvvry3uEnwTIpt0Ny0TXqTA.jpg"
+        width="80"
+      />
+      <p>Spices</p>
+    </div>
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Pickles &amp; Chutneys"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/58Ke7w5GsBxEJa06Pb5TqVnLzvPjo7hM7eRqEx1fiKGynuUnA.jpg"
+        width="80"
+      />
+      <p>Pickles &amp; Chutneys</p>
+    </div>
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Fasting Food"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/Lq3fMkJ6lFSOeE4IUa7IPFLFVXKJ3QvxUAr2RlsHZwsxTXqTA.jpg"
+        width="80"
+      />
+      <p>Fasting Food</p>
+    </div>
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Namkeens"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/1r0hjd2GjippOdTeuyOz9XlVXecfs5ME6XfOifwqnVj1e0l6E.jpg"
+        width="80"
+      />
+      <p>Namkeens</p>
+    </div>
+    <div class="category col-6 col-md-4 col-lg-2">
+      <img
+        alt="Staples"
+        height="80"
+        src="https://storage.googleapis.com/a1aa/image/fCZsVDnGlZULMa5f6f3b4sjT3q53HeDfmMBtE6QRLflZ70l6E.jpg"
+        width="80"
+      />
+      <p>Staples</p>
+    </div>
   </div>
 </div>
+
+
+
+<!-- Featured Products -->
 <div class="rentals">
   <div class="featured-products">
     <h2>Featured Products</h2>
@@ -141,7 +147,7 @@
             <div class="card-body">
               <h5 class="card-title">{{ product.name }}</h5>
               <p class="card-text">₹ {{ product.price }}</p>
-              <button class="btn btn-1 ">Add to cart</button>
+              <button class="btn btn-1">Add to cart</button>
             </div>
           </div>
         </div>
@@ -149,54 +155,72 @@
     </div>
   </div>
 
-
-  
-
   <div class="FF-container">
     <div class="content">
       <h1>Special Festival Foods</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <button >VIEW PRODUCTS</button>
+      <button  [routerLink]="['/products']">VIEW PRODUCTS</button>
     </div>
   </div>
-  <div class="footer">
-    <div>
-      <h3>LOGO</h3>
-      <p>{{email}}</p>
-    </div>
-    <div>
-      <h3>Information</h3>
-      <p>About</p>
-      <p>FAQs</p>
-      <p>My Account</p>
-      <p>Payment Method</p>
-      <p>Delivery Information</p>
-    </div>
-    <div>
-      <h3>Useful Links</h3>
-      <p>Shipping Method</p>
-      <p>Privacy Policy</p>
-      <p>Terms &amp; Condition</p>
-    </div>
-    <div>
-      <h3>Categories</h3>
-      <p>Food</p>
-      <p>Clothes</p>
-      <p>Home Decors</p>
-      <p>Rentals</p>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Pune, Maharashtra, India</p>
-      <p>+91-1234567890</p>
-      <div class="social">
-        <a href="#">
-          <i class="fa fa-instagram"> </i>
-        </a>
-        <a href="#">
-          <i class="fa fa-facebook"> </i>
-        </a>
+  
+
+  <!-- footer -->
+  <div class="footer py-4">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-md-4 col-sm-6">
+          <h3>LOGO</h3>
+          <p>{{email}}</p>
+        </div>
+  
+       
+        <div class="col-md-8 col-sm-12">
+          <div class="row">
+            
+            <div class="col-md-3 col-sm-6">
+              <h3>Information</h3>
+              <p>About</p>
+              <p>FAQs</p>
+              <p>My Account</p>
+              <p>Payment Method</p>
+              <p>Delivery Information</p>
+            </div>
+  
+           
+            <div class="col-md-3 col-sm-6">
+              <h3>Useful Links</h3>
+              <p>Shipping Method</p>
+              <p>Privacy Policy</p>
+              <p>Terms &amp; Condition</p>
+            </div>
+  
+            
+            <div class="col-md-3 col-sm-6">
+              <h3>Categories</h3>
+              <p>Food</p>
+              <p>Clothes</p>
+              <p>Home Decors</p>
+              <p>Rentals</p>
+            </div>
+  
+           
+            <div class="col-md-3 col-sm-6">
+              <h3>Contact</h3>
+              <p>Pune, Maharashtra, India</p>
+              <p>+91-1234567890</p>
+              <div class="social">
+                <a href="#" class="text-white mx-2">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white mx-2">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  

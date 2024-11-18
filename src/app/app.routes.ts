@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'food', component: FoodComponent },
   { path: 'clothes', component: ClothesComponent },
   { path: 'home-decors', component: HomeDecorsComponent},
-  { path: 'product', component: ProductsComponent },
+  { path: 'products', component:ProductsComponent},
   { path: 'rentals', component: RentalsComponent },
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '/home' },

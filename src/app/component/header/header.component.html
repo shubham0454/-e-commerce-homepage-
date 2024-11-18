@@ -1,12 +1,10 @@
 <header>
-
-<header>
   <!-- Info Nav Bar -->
   <div class="row box-1 text-center text-md-start align-items-center">
-    <div class="col-md-2">
+    <div class="col-md-3">
       <label><i class="fa fa-phone"></i> +1234567890</label>
     </div>
-    <div class="col-md-10">
+    <div class="col-md-5">
       <label><i class="fa fa-envelope"></i> {{ email }}</label>
     </div>
   </div>
@@ -14,80 +12,91 @@
   <!-- Search Nav Bar -->
   <div class="row box-2 align-items-center py-3">
     <div class="col-md-2 text-center">
-      <h1  >LOGO</h1>
+      <h1>LOGO</h1>
     </div>
     <div class="col-md-3 input-with-icon">
       <i class="fa fa-map-marker"></i>
       <input type="text" class="form-control" placeholder="Search Delivery Location" />
     </div>
     <div class="col-md-5 input-with-icon">
-      <i class="fa fa-search pl-2"></i>
+      <i class="fa fa-search"></i>
       <input type="text" class="form-control" placeholder="Search for products" />
     </div>
-    <div class="col-md-2  text-center text-md-end">
-      <button class="btn btn2 ">{{ marathi }}</button>
+    <div class="col-md-2 text-center text-md-end">
+      <button class="btn btn-language">{{ marathi }}</button>
     </div>
   </div>
 
   <!-- Main Nav Bar -->
   <div class="box-3">
-    <nav class="navbar navbar-expand-md">
-      <a class="navbar-brand d-md-none" >LOGO</a>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand d-lg-none px-3">LOGO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
+      <div class="collapse navbar-collapse" id="mainNavbar" 
+      id="mainNavbar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="dropdown nav-item">
-            <a class="dropdown-toggle nav-link" (click)="toggleDropdown('foodDropdown')">Food</a>
-            <ul class="dropdown-menu" [class.show]="isDropdownOpen.foodDropdown">
-              <li><a  routerLink="food"class="dropdown-item">Fruits</a></li>
-              <li><a  routerLink="food" class="dropdown-item">Vegetables</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Food
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="food" class="dropdown-item" href="#">Fruits</a></li>
+              <li><a  routerLink="food" class="dropdown-item" href="#">Vegetables</a></li>
             </ul>
           </li>
-        <li class="dropdown nav-item">
-          <a class="dropdown-toggle nav-link" (click)="toggleDropdown('clothesDropdown')">Clothes</a>
-          <ul class="dropdown-menu" [class.show]="isDropdownOpen.clothesDropdown">
-            <li><a  routerLink="Clothes" class="dropdown-item">Men</a></li>
-            <li><a  routerLink="clothes" class="dropdown-item">Women</a></li>
-          </ul>
-        </li>
-          <li class="dropdown nav-item">
-            <a class="dropdown-toggle nav-link" (click)="toggleDropdown('decorDropdown')">Home Decors</a>
-            <ul class="dropdown-menu" [class.show]="isDropdownOpen.decorDropdown">
-              <li><a routerLink="home-decors" class="dropdown-item" >Furniture</a></li>
-              <li><a routerLink="home-decors" class="dropdown-item" >Lights</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Clothes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="clothes" class="dropdown-item" href="#">Men</a></li>
+              <li><a routerLink="clothes" class="dropdown-item" href="#">Another action</a></li>
             </ul>
           </li>
-          <li class="dropdown nav-item">
-            <a class="dropdown-toggle nav-link" (click)="toggleDropdown('rentalsDropdown')">Rentals</a>
-            <ul class="dropdown-menu" [class.show]="isDropdownOpen.rentalsDropdown">
-              <li><a routerLink="rentals" class="dropdown-item" >Cars</a></li>
-              <li><a routerLink="rentals" class="dropdown-item" >Bikes</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home Decors
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="home-decors" class="dropdown-item" href="#">Furniture</a></li>
+              <li><a routerLink="home-decors" class="dropdown-item" href="#">Lights</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rentals
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="rentals" class="dropdown-item" href="#">Cars</a></li>
+              <li><a routerLink="rentals" class="dropdown-item" href="#">Bikes</a></li>
             </ul>
           </li>
         </ul>
-        <ul class="navbar-nav ms-auto d-flex align-items-center">
-          <li class="nav-item d-flex align-items-center me-3">
+        <ul class="navbar-nav ms-auto nav-p ">
+          <li class="nav-item  align-items-center pt-2 me-3">
             <i class="fa fa-heart me-1"></i>
             <span>Wishlist</span>
           </li>
-          <li class="nav-item d-flex align-items-center me-3">
+          <li class="nav-item align-items-center pt-2 me-3">
             <i class="fa fa-shopping-cart me-1"></i>
             <span>Cart</span>
           </li>
-          <li class="nav-item d-flex align-items-center me-3">
+          <li class="nav-item align-items-center pt-2 me-3">
             <i class="fa fa-user me-1"></i>
             <span>Profile</span>
           </li>
           <li class="nav-item">
-            <button class="btn btn-secondary" routerLink="login">LOGIN</button>
+            <button class="btn login-btn" routerLink="login">LOGIN</button>
           </li>
         </ul>
       </div>
     </nav>
   </div>
 </header>
+
+
 
